@@ -1,5 +1,14 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
+import "./style.css";
 
-createApp(App).mount('#app')
+import { library } from "@fortawesome/fontawesome-svg-core";
+
+import { fas } from "@fortawesome/free-solid-svg-icons"; // OPTIMIZE THIS LATER
+import { fab } from "@fortawesome/free-brands-svg-icons"; // OPTIMIZE THIS LATER
+import { far } from "@fortawesome/free-regular-svg-icons"; // OPTIMIZE THIS LATER
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
+library.add(fas, fab, far);
+
+createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
