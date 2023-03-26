@@ -21,12 +21,17 @@ export default defineComponent({
   <div class="font-mono">
     <header class="header shadow-lg shadow-black sticky top-0 z-50">
       <div>
-        <nav class="md:inline" :class="{ hidden: !showMobileMenu }">
-          <ul class="sm:text-center md:flex md:justify-end md:mr-10">
-            <a class="sm:p-1 md:p-5" href=""><li>Home</li></a>
-            <a class="sm:p-1 md:p-5" href=""><li>Experiencia</li></a>
-            <a class="sm:p-1 md:p-5" href=""><li>Portfólio</li></a>
-            <a class="sm:p-1 md:p-5" href=""><li>Contato</li></a>
+        <nav
+          class="md:inline sm:transition-opacity sm:ease-in-out sm:delay-150"
+          :class="{ hidden: !showMobileMenu }"
+        >
+          <ul
+            class="sm:text-center sm:flex sm:flex-col md:flex md:justify-end md:mr-10"
+          >
+            <a class="sm:p-3 md:p-5" href=""><li>Home</li></a>
+            <a class="sm:p-3 md:p-5" href=""><li>Experiencia</li></a>
+            <a class="sm:p-3 md:p-5" href=""><li>Portfólio</li></a>
+            <a class="sm:p-3 md:p-5" href=""><li>Contato</li></a>
           </ul>
         </nav>
         <button
