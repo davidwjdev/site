@@ -1,8 +1,11 @@
 <script >
-import { defineComponent } from "vue";
-import Home from "./components/Home.vue";
-
-export default defineComponent({
+import HomeVue from "./components/Home.vue";
+import ExperienciaVue from "./components/Experiencia.vue";
+export default {
+  components: {
+    HomeVue,
+    ExperienciaVue,
+  },
   data() {
     return {
       showMobileMenu: false,
@@ -14,19 +17,18 @@ export default defineComponent({
       this.showMobileMenu = !this.showMobileMenu;
     },
   },
-});
+};
 </script>
-
 <template>
-  <div class="font-mono">
-    <header class="header shadow-lg shadow-black sticky top-0 z-50">
+  <div class="">
+    <header class="header shadow shadow-black sticky top-0 z-50">
       <div>
         <nav
           class="md:inline sm:transition-opacity sm:ease-in-out sm:delay-150"
           :class="{ hidden: !showMobileMenu }"
         >
           <ul
-            class="sm:text-center sm:flex sm:flex-col md:flex md:justify-end md:mr-10"
+            class="flex sm:text-center sm:flex-col md:flex-row md:justify-end md:mr-10"
           >
             <a class="sm:p-3 md:p-5" href=""><li>Home</li></a>
             <a class="sm:p-3 md:p-5" href=""><li>Experiencia</li></a>
@@ -51,7 +53,8 @@ export default defineComponent({
       </div>
     </header>
   </div>
-  <Home />
+  <HomeVue />
+  <ExperienciaVue />
 </template>
 
 <style scoped>
