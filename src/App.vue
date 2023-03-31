@@ -1,10 +1,14 @@
 <script >
 import HomeVue from "./components/Home.vue";
 import ExperienciaVue from "./components/Experiencia.vue";
+import ProjetosVue from "./components/Projetos.vue";
+import ContatoVue from "./components/Contato.vue";
 export default {
   components: {
     HomeVue,
     ExperienciaVue,
+    ProjetosVue,
+    ContatoVue,
   },
   data() {
     return {
@@ -30,10 +34,12 @@ export default {
           <ul
             class="flex sm:text-center sm:flex-col md:flex-row md:justify-end md:mr-10"
           >
-            <a class="sm:p-3 md:p-5" href=""><li>Home</li></a>
-            <a class="sm:p-3 md:p-5" href=""><li>Experiencia</li></a>
-            <a class="sm:p-3 md:p-5" href=""><li>Portfólio</li></a>
-            <a class="sm:p-3 md:p-5" href=""><li>Contato</li></a>
+            <a class="sm:p-3 md:p-5" href="#home"><li>Home</li></a>
+            <a class="sm:p-3 md:p-5" href="#experiencia"
+              ><li>Experiencia</li></a
+            >
+            <a class="sm:p-3 md:p-5" href="#projetos"><li>Portfólio</li></a>
+            <a class="sm:p-3 md:p-5" href="#contato"><li>Contato</li></a>
           </ul>
         </nav>
         <button
@@ -53,8 +59,12 @@ export default {
       </div>
     </header>
   </div>
-  <HomeVue />
-  <ExperienciaVue />
+  <HomeVue id="home" />
+  <div class="md:m-10 sm:pt-20 flex flex-col items-center">
+    <ExperienciaVue id="experiencia" />
+    <ProjetosVue id="projetos" />
+    <ContatoVue id="contato" />
+  </div>
 </template>
 
 <style scoped>
