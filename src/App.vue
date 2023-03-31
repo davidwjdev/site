@@ -24,8 +24,8 @@ export default {
 };
 </script>
 <template>
-  <div class="">
-    <header class="header shadow shadow-black sticky top-0 z-50">
+  <div class="sticky top-0">
+    <header class="header shadow shadow-black z-50">
       <div>
         <nav
           class="md:inline sm:transition-opacity sm:ease-in-out sm:delay-150"
@@ -34,7 +34,9 @@ export default {
           <ul
             class="flex sm:text-center sm:flex-col md:flex-row md:justify-end md:mr-10"
           >
-            <a class="sm:p-3 md:p-5" href="#home"><li>Home</li></a>
+            <a class="sm:p-3 md:p-5 visited::bg-white" href="#home"
+              ><li>Home</li></a
+            >
             <a class="sm:p-3 md:p-5" href="#experiencia"
               ><li>Experiencia</li></a
             >
@@ -61,9 +63,14 @@ export default {
   </div>
   <HomeVue id="home" />
   <div class="md:m-10 sm:pt-20 flex flex-col items-center">
-    <ExperienciaVue id="experiencia" />
-    <ProjetosVue id="projetos" />
-    <ContatoVue id="contato" />
+    <div id="experiencia" class="m-5"></div>
+    <ExperienciaVue />
+    <div id="projetos" class="m-5"></div>
+
+    <ProjetosVue />
+    <div id="contato" class="m-5"></div>
+
+    <ContatoVue />
   </div>
 </template>
 
@@ -76,11 +83,11 @@ export default {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: inherit;
 }
-.header a:hover {
+/* .header a:hover {
   color: #ffffff;
   background-color: #0b0b0b;
-}
-.header a:active {
+} */
+/* .header a:visited {
   border-bottom: #66eb00 1px solid;
-}
+} */
 </style>

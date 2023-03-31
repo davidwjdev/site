@@ -57,7 +57,7 @@ export default {
           <li
             v-for="(item, index) in experiencias"
             :key="index"
-            class="m-3 mr-2 p-5 rounded-3xl flex items-center bg-gray-900"
+            class="m-3 mr-2 p-5 rounded-3xl flex items-center bg-gray-900 md:hover:bg-gray-700"
           >
             <img
               :src="item.image"
@@ -79,7 +79,7 @@ export default {
           <li
             v-for="(item, index) in conhecimentos"
             :key="index"
-            class="m-3 mr-2 p-5 rounded-3xl flex items-center bg-gray-900"
+            class="m-3 mr-2 p-5 rounded-3xl flex items-center bg-gray-900 md:hover:bg-gray-700"
           >
             <img
               :src="item.image"
