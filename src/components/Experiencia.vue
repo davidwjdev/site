@@ -3,43 +3,104 @@ export default {
   data() {
     return {
       experiencias: [
-        { title: "Angular", image: "/src/assets/img/experiencia/angular.svg" },
-        { title: "Node.JS", image: "/src/assets/img/experiencia/nodejs.svg" },
+        {
+          title: "Angular",
+          src: new URL(
+            `/src/assets/img/experiencia/angular.svg`,
+            import.meta.url
+          ).href,
+        },
+        {
+          title: "Node.JS",
+          src: new URL(
+            `/src/assets/img/experiencia/nodejs.svg`,
+            import.meta.url
+          ).href,
+        },
         {
           title: "Express.JS",
-          image: "/src/assets/img/experiencia/express.svg",
+          src: new URL(
+            `/src/assets/img/experiencia/express.svg`,
+            import.meta.url
+          ).href,
         },
         {
           title: "JavaScript",
-          image: "/src/assets/img/experiencia/javascript.svg",
+          src: new URL(
+            `/src/assets/img/experiencia/javascript.svg`,
+            import.meta.url
+          ).href,
         },
-        { title: "HTML", image: "/src/assets/img/experiencia/html5.svg" },
-        { title: "CSS", image: "/src/assets/img/experiencia/css3.svg" },
-        { title: "SCSS/SASS", image: "/src/assets/img/experiencia/sass.svg" },
+        {
+          title: "HTML",
+          src: new URL(`/src/assets/img/experiencia/html5.svg`, import.meta.url)
+            .href,
+        },
+        {
+          title: "CSS",
+          src: new URL(`/src/assets/img/experiencia/css3.svg`, import.meta.url)
+            .href,
+        },
+        {
+          title: "SCSS/SASS",
+          src: new URL(`/src/assets/img/experiencia/sass.svg`, import.meta.url)
+            .href,
+        },
         {
           title: "Bootstrap",
-          image: "/src/assets/img/experiencia/bootstrap.svg",
+          src: new URL(
+            `/src/assets/img/experiencia/bootstrap.svg`,
+            import.meta.url
+          ).href,
         },
-
-        { title: "Figma", image: "/src/assets/img/experiencia/figma.svg" },
+        {
+          title: "Figma",
+          src: new URL(`/src/assets/img/experiencia/figma.svg`, import.meta.url)
+            .href,
+        },
       ],
       conhecimentos: [
-        { title: "Vue", image: "/src/assets/img/conhecimento/vuejs.svg" },
+        {
+          title: "Vue",
+          src: new URL(
+            `/src/assets/img/conhecimento/vuejs.svg`,
+            import.meta.url
+          ).href,
+        },
         {
           title: "React",
-          image: "/src/assets/img/conhecimento/react_reactNative.svg",
+          src: new URL(
+            `/src/assets/img/conhecimento/react_reactNative.svg`,
+            import.meta.url
+          ).href,
         },
         {
           title: "React Native",
-          image: "/src/assets/img/conhecimento/react_reactNative.svg",
+          src: new URL(
+            `/src/assets/img/conhecimento/react_reactNative.svg`,
+            import.meta.url
+          ).href,
         },
 
         {
           title: "Tailwindcss",
-          image: "/src/assets/img/conhecimento/tailwindcss.svg",
+          src: new URL(
+            `/src/assets/img/conhecimento/tailwindcss.svg`,
+            import.meta.url
+          ).href,
         },
-        { title: "PHP", image: "/src/assets/img/conhecimento/php.svg" },
-        { title: "Laravel", image: "/src/assets/img/conhecimento/laravel.svg" },
+        {
+          title: "PHP",
+          src: new URL(`/src/assets/img/conhecimento/php.svg`, import.meta.url)
+            .href,
+        },
+        {
+          title: "Laravel",
+          src: new URL(
+            `/src/assets/img/conhecimento/laravel.svg`,
+            import.meta.url
+          ).href,
+        },
       ],
     };
   },
@@ -60,7 +121,7 @@ export default {
             class="m-3 mr-2 p-5 rounded-3xl flex items-center bg-gray-900 md:hover:bg-gray-700"
           >
             <img
-              :src="item.image"
+              :src="item.src"
               :alt="item.title"
               class="lg:w-10 lg:h-10 sm:w-5 sm:h-5 md:mr-5 sm:mr-1"
             />
@@ -82,7 +143,7 @@ export default {
             class="m-3 mr-2 p-5 rounded-3xl flex items-center bg-gray-900 md:hover:bg-gray-700"
           >
             <img
-              :src="item.image"
+              :src="item.src"
               :alt="item.title"
               class="lg:w-10 lg:h-10 sm:w-5 sm:h-5 md:mr-5 sm:mr-1"
             />
