@@ -25,7 +25,7 @@ export default {
 </script>
 <template>
   <div class="sticky top-0">
-    <header class="header shadow shadow-black z-50">
+    <header class="header shadow shadow-black z-50 bg-black">
       <div>
         <nav
           class="md:inline sm:transition-opacity sm:ease-in-out sm:delay-150"
@@ -34,14 +34,26 @@ export default {
           <ul
             class="flex sm:text-center sm:flex-col md:flex-row md:justify-end md:mr-10"
           >
-            <a class="sm:p-3 md:p-5 visited::bg-white" href="#home"
+            <a
+              class="sm:p-3 md:p-5 font-black md:text-gray-400 sm:text-white hover:text-white hover:bg-zinc-900"
+              href="#home"
               ><li>Home</li></a
             >
-            <a class="sm:p-3 md:p-5" href="#experiencia"
+            <a
+              class="sm:p-3 md:p-5 font-black md:text-gray-400 sm:text-white hover:text-white hover:bg-zinc-900"
+              href="#experiencia"
               ><li>Experiencia</li></a
             >
-            <a class="sm:p-3 md:p-5" href="#projetos"><li>Portfólio</li></a>
-            <a class="sm:p-3 md:p-5" href="#contato"><li>Contato</li></a>
+            <a
+              class="sm:p-3 md:p-5 font-black md:text-gray-400 sm:text-white hover:text-white hover:bg-zinc-900"
+              href="#projetos"
+              ><li>Portfólio</li></a
+            >
+            <a
+              class="sm:p-3 md:p-5 font-black md:text-gray-400 sm:text-white hover:text-white hover:bg-zinc-900"
+              href="#contato"
+              ><li>Contato</li></a
+            >
           </ul>
         </nav>
         <button
@@ -76,12 +88,12 @@ export default {
 
 <style scoped>
 .header {
-  background-color: #000000;
+  /* background-color: #000000; */
 }
 .header a {
-  font-weight: bold;
+  /* font-weight: bold;
   color: rgba(255, 255, 255, 0.5);
-  text-decoration: inherit;
+  text-decoration: inherit; */
 }
 /* .header a:hover {
   color: #ffffff;
