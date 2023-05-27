@@ -108,7 +108,7 @@ export default {
 </script>
 
 <template>
-  <div class="md:w-8/12 md:rounded-lg mb-24 bg-black md:shadow-lg md:shadow-black">
+  <div class="md:w-8/12 rounded-lg mb-24 bg-black md:shadow-lg md:shadow-black sm:m-5">
     <div>
       <h2 class="md:text-3xl sm:text-2xl font-bold m-10">EXPERIÊNCIA</h2>
       <div class="text-base m-10">
@@ -122,7 +122,7 @@ export default {
       </div>
     </div>
   </div>
-  <div class="md:w-8/12 md:rounded-lg mb-24 bg-black md:shadow-lg md:shadow-black">
+  <div class="md:w-8/12 rounded-lg mb-24 bg-black md:shadow-lg md:shadow-black  sm:m-5">
 
     <div>
       <h2 class="md:text-3xl sm:text-2xl font-bold m-10">CONHECIMENTOS</h2>

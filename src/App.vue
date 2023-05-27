@@ -27,47 +27,31 @@ export default {
   <div class="sticky top-0">
     <header class="header shadow shadow-black z-50 bg-black">
       <div>
-        <nav
-          class="md:inline sm:transition-opacity sm:ease-in-out sm:delay-150"
-          :class="{ hidden: !showMobileMenu }"
-        >
-          <ul
-            class="flex sm:text-center sm:flex-col md:flex-row md:justify-end md:mr-10"
-          >
-            <a
-              class="sm:p-3 md:p-5 font-black md:text-gray-400 sm:text-white hover:text-white hover:bg-zinc-900"
-              href="#home"
-              ><li>Home</li></a
-            >
-            <a
-              class="sm:p-3 md:p-5 font-black md:text-gray-400 sm:text-white hover:text-white hover:bg-zinc-900"
-              href="#experiencia"
-              ><li>Experiencia</li></a
-            >
-            <a
-              class="sm:p-3 md:p-5 font-black md:text-gray-400 sm:text-white hover:text-white hover:bg-zinc-900"
-              href="#projetos"
-              ><li>Portfólio</li></a
-            >
-            <a
-              class="sm:p-3 md:p-5 font-black md:text-gray-400 sm:text-white hover:text-white hover:bg-zinc-900"
-              href="#contato"
-              ><li>Contato</li></a
-            >
+        <nav class="md:inline sm:transition-opacity sm:ease-in-out sm:delay-150" :class="{ hidden: !showMobileMenu }">
+          <ul class="flex sm:text-center sm:flex-col md:flex-row md:justify-end md:mr-10">
+            <a class="sm:p-3 md:p-5 font-black md:text-gray-400 sm:text-white hover:text-white hover:bg-zinc-900"
+              href="#home" @click="showMenu()">
+              <li>Home</li>
+            </a>
+            <a class="sm:p-3 md:p-5 font-black md:text-gray-400 sm:text-white hover:text-white hover:bg-zinc-900"
+              href="#experiencia" @click="showMenu()">
+              <li>Experiencia</li>
+            </a>
+            <a class="sm:p-3 md:p-5 font-black md:text-gray-400 sm:text-white hover:text-white hover:bg-zinc-900"
+              href="#projetos" @click="showMenu()">
+              <li>Portfólio</li>
+            </a>
+            <a class="sm:p-3 md:p-5 font-black md:text-gray-400 sm:text-white hover:text-white hover:bg-zinc-900"
+              href="#contato" @click="showMenu()">
+              <li>Contato</li>
+            </a>
           </ul>
         </nav>
-        <button
-          v-if="showMobileMenu"
-          class="bg-zinc-900 w-8 h-8 rounded-full absolute right-3 top-3 md:hidden"
-          @click="showMenu()"
-        >
+        <button v-if="showMobileMenu" class="bg-zinc-900 w-8 h-8 rounded-full absolute right-3 top-3 md:hidden"
+          @click="showMenu()">
           <font-awesome-icon :icon="['fas', 'xmark']" />
         </button>
-        <button
-          v-else
-          class="bg-zinc-900 w-8 h-8 rounded-full absolute right-3 top-3 md:hidden"
-          @click="showMenu()"
-        >
+        <button v-else class="bg-zinc-900 w-8 h-8 rounded-full absolute right-3 top-3 md:hidden" @click="showMenu()">
           <font-awesome-icon :icon="['fas', 'bars']" />
         </button>
       </div>
@@ -90,11 +74,13 @@ export default {
 .header {
   /* background-color: #000000; */
 }
+
 .header a {
   /* font-weight: bold;
   color: rgba(255, 255, 255, 0.5);
   text-decoration: inherit; */
 }
+
 /* .header a:hover {
   color: #ffffff;
   background-color: #0b0b0b;
