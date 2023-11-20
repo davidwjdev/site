@@ -1,23 +1,20 @@
 <script></script>
 <template>
-  <div class="static md:w-8/12 rounded-lg bg-black md:shadow-lg md:shadow-black mb-24  sm:m-5">
-    <h2 class="md:text-3xl sm:text-2xl font-bold m-10">PROJETOS</h2>
-    <div class="text-base m-10">
-      <ul class="flex flex-wrap justify-center">
-        <li class="flex flex-col">
-          <div class="h-36 w-36 m-3 mr-2 p-5 rounded-3xl flex items-center bg-gray-900"></div>
-          <span class="text-center">EM BREVE</span>
-        </li>
-        <li class="flex flex-col">
-          <div class="h-36 w-36 m-3 mr-2 p-5 rounded-3xl flex items-center bg-gray-900"></div>
-          <span class="text-center">EM BREVE</span>
-        </li>
-        <li class="flex flex-col">
-          <div class="h-36 w-36 m-3 mr-2 p-5 rounded-3xl flex items-center bg-gray-900"></div>
-          <span class="text-center">EM BREVE</span>
-        </li>
-      </ul>
+    <div
+        class="static md:w-8/12 rounded-lg bg-black bg-opacity-60 md:shadow-lg md:shadow-black mb-24 sm:m-5"
+    >
+        <h2 class="md:text-3xl sm:text-2xl font-bold m-10">PROJETOS</h2>
+        <div class="text-base m-10">
+            <div class="">
+                <span
+                    class="z-10 top-20 md:left-1/3 sm:right-0 center relative font-bold"
+                    >Em desenvolvimento...</span
+                >
+                <div
+                    class="bg-neutral-700 rounded-lg h-36 flex justify-center items-center blur-md z-0"
+                ></div>
+            </div>
+        </div>
     </div>
-  </div>
 </template>
-<style  scoped></style>
+<style scoped></style>
