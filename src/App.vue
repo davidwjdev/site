@@ -3,6 +3,7 @@ import HomeVue from "./components/Home.vue";
 import ExperienciaVue from "./components/Experiencia.vue";
 import ProjetosVue from "./components/Projetos.vue";
 import ContatoVue from "./components/Contato.vue";
+
 export default {
     components: {
         HomeVue,
